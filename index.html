@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css?v=3">
+    <title>Propina </title>
+    
+  </head>
+  <body>
+    <div class="container  mt-5 mb-5" >
+      
+      <div class="row m-0" id="principal" >
+        <h2>TIP</h2>
+        <div class="col-md-12 p-0  pt-4 pb-4">
+          <form class="bg-light p-4 m-auto" action="#">
+            <div class="row">
+              
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <input id="monto" type="number" class="form-control"  placeholder="Ingresa el monto en sats" required>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <textarea id="mensaje" class="form-control"  placeholder="Escríbe un mensaje (opcional)" required rows="3"></textarea>
+                </div>
+              </div>
+            <button   type="button" class="btn btn-custom btn-lg btn-block mt-3" onclick="mostrar_invoice()"> Enviar </button>
+          </form>
+        </div>
+      </div>
+       
+    </div>
+
+    <div id="div_qrcode"  class="row m-0" style="display:none;">
+      <h3>Escanea con tu wallet favorita este invoice</h3>
+    
+        <div id="qrcode"></div>
+        <textarea id="invoice_texto" readonly  rows="3">  
+        </textarea>   
+      
+    </div>   
+  
+    <script src="js/qrcode.min.js"></script>
+    <script src="js/lnsocket.js"></script>
+    <script src="js/tip.js?v=6"></script>
+  </body>
+</html>

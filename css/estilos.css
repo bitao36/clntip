@@ -1,0 +1,75 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito Sans";
+    background-color: #b2bec3;
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+    h2 {
+         text-align: center;
+         color: #000;
+         font-weight: 600;
+         
+      }
+      h3 {
+         text-align: center;
+         color: #000;
+         font-weight: 200;
+         
+      }
+
+    #div_qrcode 
+    {
+       text-align:center;
+    }
+
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+    form{
+    width: 50%;
+    }
+    .form-control {
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    }
+    .form-control:focus{
+    box-shadow: none;
+    border-color:#130f40;
+    }
+    .form-control:hover{
+    border-color: #241f61;
+    }
+    .bg-custom {
+    background-color: #130f40;
+    }
+    .btn-custom {
+    border-color: #130f40;
+    color: #130f40;
+    }
+    .btn-custom:hover {
+    background-color: #241f61;
+    color: #fff;
+    box-shadow:0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    }
+    @media(max-width: 992px) {
+    form{
+    width: 80%;
+    }
+    }
+    @media(max-width: 575px) {
+    form{
+    width: 90%;
+    }
+    }
