@@ -43,7 +43,7 @@ En el archivo de configuración de Core Lightning debes añadir esta línea:
 
 Debes estar en la carpeta de tu servidor en la que vayas a desplegar la página html y luego:
 
-`$ git clone git@github.com:edythor/clntip.git`
+`$ git clone git@github.com:bitao36/clntip.git`
 
 ## Modificar el archivo tip.js
 Debes editar el archivo tips.js para añadir los datos que están entre ángulos <>
